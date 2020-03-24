@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <form action="">
+        <input type="text">
+
+    </form>
+
+    <p id="para1" class="mypara">Lorem.</p>
+    <p id="para2" class="mypara">Eum!</p>
+    <p id="para3">Voluptatem?</p>           
+    <!-- 배열처럼 0부터 시작 -->
+
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <!-- 배열처럼 0부터 시작 -->
+
+    <script>
+        var para1 = document.getElementById("para1");
+        console.log(para1);
+
+        var paras = document.getElementsByTagName("p");
+        console.log(paras[1]); // 배열처럼 사용
+        
+        var paras2 = document.getElementsByClassName("mypara");
+        console.log(paras[2]);
+        
+        var forms = document.forms;
+        console.log(forms[0]); // form안에 들어가있는 element
+
+        var images = document.images;
+        console.log(images[1]); // 2.jpg를 설정
+
+        var para3 = document.querySelector("#para3"); // selcetor
+        console.log(para3);
+
+        var paras2 = document.querySelectorAll(".mypara");
+        console.log(paras2[0]);
+        
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, dicta?</p>
+    <h1 id="para3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, saepe.</h1>
+    <script>
+        // id값 변경 및 출력 log
+        console.log(document.getElementById("para1").id);
+        document.getElementById("para1").id = "para2";
+        console.log(document.getElementById("para2").id);
+        
+
+        console.log(document.getElementById("para3").id);
+        // id값을 출력 (para3)
+        document.getElementById("para3").id = "para4";
+        console.log(document.getElementById("para4").id);
+        // id값을 para3에서 para4로 변경
+        
+        
+    </script>
+</body>
+</html>
