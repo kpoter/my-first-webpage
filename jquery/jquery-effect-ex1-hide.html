@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("p").hide();
+            });
+
+            $("#button2").click(function() {
+                $("#button2+p").hide(1000);  // 없어지는 effect
+            })                               // 2000
+        });
+    </script>
+</head>
+
+<body>
+    <div class='container'>
+        <button class="btn btn-block btn-info" id="button1">숨겨라</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fugiat dignissimos libero, voluptates
+            corrupti pariatur a minima culpa optio eveniet molestiae. Fugit eius blanditiis at consectetur asperiores
+            minus nesciunt doloribus!</p>
+        <button class="btn btn-block btn-secondary" id="button2">숨겨라 + 파라미터</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat tempore quisquam doloribus placeat dolore explicabo aspernatur repellat laudantium fugit omnis, facilis sunt. Modi commodi debitis ducimus sed nisi eaque rerum?</p>
+    </div>
+</body>
+
+</html>

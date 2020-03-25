@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <style>
+        #small-image1 { 
+            width: 100px;
+        }
+        #big-image1 {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#small-image1").click(function() {
+                $("#big-image1").fadeIn();
+            });
+            $("#big-image1").click(function(){
+                $(this).fadeOut(); // this는 객체에 포함
+            })
+            
+        });
+    </script>
+</head>
+<body>
+   
+    <img id="small-image1" src="../03-24/아이언맨.jpg" alt="">
+    <img src="../03-24/아이언맨.jpg" alt="" id="big-image1">
+</body>
+</html>
