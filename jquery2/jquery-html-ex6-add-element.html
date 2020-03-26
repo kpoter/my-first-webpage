@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            var text = $(this).text(); // html의 요소를 선택
+            var li = $("<li />");
+            li.text(text);
+            $("#result").append(li);   // result종료태그 바로앞에 추가
+        })
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-outline-success btn-block my-3">Lorem.</button>
+        <button class="btn btn-outline-success btn-block my-3">Enim.</button>
+        <button class="btn btn-outline-success btn-block my-3">Unde!</button>
+        <button class="btn btn-outline-success btn-block my-3">Numquam.</button>
+        <button class="btn btn-outline-success btn-block my-3">Ab.</button>
+        <button class="btn btn-outline-success btn-block my-3">Esse?</button>
+
+        <ul id="result"></ul>
+    </div>
+</body>
+</html>

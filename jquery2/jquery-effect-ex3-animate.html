@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $(".head-row").click(function(){
+            $(".data-row").animate({
+                height : "100px",
+            })
+            $(".data-row").animate({
+                "font-size" : "25px"  // animate를 순서대로 
+                                     // css 특정부호(+ - * /)는 따옴표로 표시
+            })
+        })
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <div class="table">
+            <div class="head-row">
+                <div>Lorem.</div>
+                <div>Voluptates.</div>
+                <div>Nulla.</div>
+            </div>
+            <div class="data-row">
+                <div>Lorem.</div>
+                <div>Explicabo.</div>
+                <div>Porro.</div>
+            </div>
+            <div class="data-row">
+                <div>Eius.</div>
+                <div>Eum?</div>
+                <div>Tempora!</div>
+            </div>
+            <div class="data-row">
+                <div>Aperiam?</div>
+                <div>Deleniti.</div>
+                <div>Odit?</div>
+            </div>
+            <div class="data-row">
+                <div>Laudantium.</div>
+                <div>Sed.</div>
+                <div>Perferendis!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

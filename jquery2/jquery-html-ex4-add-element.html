@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("#btn1").click(function() {
+            var p1 =$("<p></p>");     // 새로운 element에 객체
+            p1.text("append로 붙일 새 element");
+            $("#result").append(p1);  // 종료태그 바로 앞에
+        });                           // 자식 Element
+
+        $("#btn2").click(function() {
+            var p2 = $("<p />");      // 내용물이 없을 떄 <p />
+            p2.text("prepend로 붙일 새 element");
+            $("#result").prepend(p2); // 종료태그 바로 뒤에
+        });                           // 자식 Element
+
+        $("#btn3").click(function() {
+            var p3 = $("<p />");
+            p3.text("before로 붙일 새 element");
+            $("#result").before(p3);  // id = result앞에 
+        });                           // 형제 Element
+
+        $("#btn4").click(function() {
+            var p4 = $("<p />");
+            p4.text("after로 붙일 새 element");
+            $("#result").after(p4);   // id = result뒤에
+        });                           // 형제 Element
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-outline-primary" id="btn1">append</button>
+        <button class="btn btn-outline-secondary" id="btn2">prepend</button>
+        <button class="btn btn-outline-success" id="btn3">before</button>
+        <button class="btn btn-outline-dark" id="btn4">after</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

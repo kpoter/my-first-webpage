@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("h1").first().css("color", "yellow"); // 첫번쨰
+        $("h1").last().css("color", "red");     // 마지막
+        $("h1").eq(5).css("color", "blue");     // 6번째 
+        $("h1").filter(".my").css("color", "gold"); // my class가 들어간 
+        $("h1.my").css("color", "gold");
+
+        $("h1").not(".my").css("text-decoration", "underline")
+        // my class가 아닌
+
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Nemo, illum dolores?</h1>
+        <h1 class="my">Hic, maxime numquam?</h1>
+        <div>
+            <h1 class="my">Dolorum, fugiat rerum?</h1>
+            <h1>Aspernatur, beatae fuga!</h1>
+            <h1>Dolore, distinctio placeat.</h1>
+        </div>
+        <h1>Dolorum, cumque inventore.</h1>
+        <h1>Molestias, dicta debitis!</h1>
+        <h1>Deserunt, velit ea.</h1>
+        <h1>Ipsum, in voluptate.</h1>
+    </div>
+</body>
+</html>
